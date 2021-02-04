@@ -10,8 +10,8 @@ collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "static/posts" # The path to the folder where our blog posts are stored
+    identifier_field: "slug" # Tells Netlify to use the slug field as the slug (and file name) value
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document
-      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
